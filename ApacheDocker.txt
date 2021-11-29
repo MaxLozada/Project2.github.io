@@ -1,0 +1,23 @@
+Docker Tutorial
+
+	Configuring Apache For Docker:
+		
+		1. Boot up Git Bash or any type of command prompt and change directories to the directory that possesses your git repository.
+		2. Next, type "vi Dockerfile" in the terminal to create and open a file called Dockerfile with the vi editor.
+		3. Type in the following code:
+			" FROM httpd:2.4
+			  COPY ./public_html/ /usr/local/apache2/htdocs/"
+		4. Once completed, press shift followed by two z presses to save the file. Now repeat the second step, but name the file "docker-compose.yml"
+		5. Type in the following code:
+			" version: "3.2"
+			  services:
+			    apache:
+			      build: . 
+			      ports:
+			        - "8080:80"
+			    volumes:
+			        - ./public_html/:/usr/local/apache2/htdocs/ "
+		6. Press shift followed by two z presses to save the file and just like that you have configured the Apache server to run on Docker.
+		7. Run the command "docker-compose up -d" in the terminal to start up the Apache Container. It will take a little bit of time to start up.
+		8. Once the container finishes the start up process, open Docker Desktop to view that the container is running. You can either type in "http://localhost:8080/" or click on the container and click open in browser to view your Apache Web Server.
+	Just like that, you have configured Apache to run on Docker. The next tutorial will show how to take this web server and host it to the Azure Cloud.

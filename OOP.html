@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!Navbar>
+
+<div class="brand-logo">
+  <a href="index.html" title="Logo"><img style="vertical-align:middle" src="img/webtolife.png"></a> <!-- Swap this placeholder out for your logo image -->
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a class="nav-item" href="index.html">Home</a>
+    <a class="nav-item" href="Pylint & others.html">Pylint & others</a>
+    <a class="nav-item" href="AAA_Testing.html">AAA Testing</a>
+    <a class="nav-item" href="OOP.html">OOP</a>
+    <a class="nav-item" href="SOLID.html">SOLID</a>
+    <a class="nav-item" href="Git_Tutorial.html">Git Tutorial</a>
+    <a class="nav-item" href="Docker_Tutorial.html">Docker Tutorial</a>
+    <a class="nav-item" href="Azure_Cloud_Tutorial.html">Azure Cloud Tutorial</a>
+    <a class="nav-item" href="Useful_Commands.html">Useful Commands</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div>
+  <section>
+    <div  class="welcometxt">
+      <h1>OOP</h1>
+      <p></p>
+      <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+    </div>
+  </section>
+  <section>
+    <div class="ghtxt">
+      <h3>OOP is short for object-orientated programming</h3>
+      <p>To help demonstrate the principles of object-orientated programming this page will be referring
+        to a calculator program that can be found in a GitHub repository link at the bottom of the page. The
+        list of principles for OOP will be as follows Encapsulation, Inheritance, Polymorphism, and Abstraction.</p>
+      <br>
+
+      <h3>Encapsulation - </h3>
+      <p>So to begin Encapsulation is the bundling of data, with the methods that operate on that data, into a single unit.
+        <br>
+        <br>Here is an example that will show us Encapsulation in the calculator program.</p>
+      <img src="img/Addtion Sceenshot (2).png" alt="whatever">
+      <p>In the image above we see that the class is called <b>Addition</b>. The class has a method that takes the variables
+        <b>value_a</b> and <b>value_b</b> and adds them together to give a result.</p>
+      <br>
+
+      <h3>Inheritance -</h3>
+      <p>So to start here Inheritance is the procedure in which one class inherits the attributes and methods of another class.
+        <br>
+        <br>Here is an example that will show us Inheritance in the calculator program.</p>
+      <img src="img/Calculator Class screenshot (2).png" alt="whatever">
+      <p>In the image above we see that other classes are being imported to be used in the <b>Calculator class</b>.
+        Like for example, the <b>Addition class</b> was previously mentioned and that is one of the classes being
+        imported so that the <b>Calculator class</b> can use attributes and methods from the <b>Addition class</b>.</p>
+      <br>
+
+      <h3>Polymorphism -</h3>
+      <p>So in Polymorphism, the methods in the child class have the same name as the methods in the parent class.
+        <br>
+        <br>Here is an example that will show Polymorphism in the calculator program.</p>
+      <img src="img/assert.png" alt="whatever">
+      <p>We can see that the calculator test file has two assertions for the <b>test_calculator_
+        add</b> method one with <b>two values</b> and another with <b>three values</b>.
+        So we use the same function name but we have different signatures.</p>
+      <br>
+
+      <h3>Abstraction -</h3>
+      <p>So in Abstraction shows only the relevant attributes of objects and hides the unnecessary details.
+        <br>
+        <br>Here is an example that will show Abstraction in the calculator program.</p>
+      <img src="img/Abstraction Addition testing (2).png" alt="whatever">
+      <p>In the image, we can see that this file is testing addition as it is defined as <b>test_addition</b>
+        and it asserts what the result should be. It also imports the <b>Addition class</b> but we do not see the <b>Addition class</b> that
+        is hidden;
+        all we can see are the values that have been asserted and the result we should receive.</p>
+      <h3>These links below contain the examples used on this page.</h3>
+      <br>
+      <button onclick="window.location.href='https://github.com/MaxLozada/Calculator_Version2'">Repository 1</button>
+      <br>
+      <br>
+      <button onclick="window.location.href='https://github.com/MaxLozada/calculator_2_hw'">Repository 2</button>
+    </div>
+  </section>
+  <sectioin>
+    <div class="emptyspace"></div>
+  </sectioin>
+</div>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+OG txt from index page
+
+The Git Tutorial page will supply you with basic knowledge and at the very least lead you in the right direction.
+
+Shows how to set up docker.
+
+Azure cloud tutorial will leave you with the knowledge to run a web server.
+
+This page is meant to simply show commands that may be useful.
